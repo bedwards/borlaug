@@ -11,4 +11,5 @@ a { color: #555; }
 
 <p><a href="../">&larr; Back to index</a></p>
 
-<p><em>Plan will appear here once finalized.</em></p>
+{% capture plan %}{% include_relative novel-plan.md %}{% endcapture %}
+{{ plan | markdownify }}
